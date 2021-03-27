@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: black;      
+    text-align: center;
+}
+/* header section */
+header {
+    padding: 15px 15px;
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    z-index: 9999;
+    margin: 0 auto;
+    top: 0;
+    }
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    padding: 0 25px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav {
+    margin: 7px 0;
+} 
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;    
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw
+}
+
+header nav ul li a:hover {
+    background: #808080;
+    color: white;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+/* end of header */
+
+/* hero section */
+.hero {
+    margin: auto;
+    display: flex;    
+    background-size: cover;
+    text-align: center;
+    align-items: center;  
+    flex-direction: row;     
+    background-attachment: fixed;
+    padding-bottom: 50px;
+}
+
+.hero-text {
+    width: 50%;
+    text-align: right;
+    margin: 3.5%;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    line-height: 1.2;    
+    
+}
+
+.hero-image img {
+    object-fit: cover;    
+    max-width: 287px;
+    max-height: 383px; 
+    clip-path: ellipse();   
+}
+
+.hero h2 {
+    text-shadow: 2px 2px 2px white;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/* about me */
+.about-me {    
+    border-bottom: 2px solid grey;   
+}
+
+.content{
+    margin: 50px auto;
+    width: 80%;   
+    object-fit: cover;
+    text-align:center; 
+    text-align:center; 
+    padding: 0 120px 0 120px;
+    line-height: 1.7;
+}
+
+.content h3 { 
+    margin: 50px auto;   
+    text-align: center;
+    padding: 30px 0 30px 0;
+    text-shadow: 2px 2px 2px white;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 55px;
+}
+
+.content p {
+    font-weight: bold; 
+    padding-bottom: 60px;   
+}
+
+/* my work section */
+.my-work {    
+    margin: 0 auto;
+    display: inline;
+    width: 80%;
+    padding: 30px;    
+}
+
+.my-work img {
+    width: 30%;   
+    height: auto;  
+    margin: 0 10px 0 10px;
+
+}
+/*.my-work img {
+    text-align: center;
+    position: relative;
+    -ms-zoom: 0.25;
+    -moz-transform: scale(0.25);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.25);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.25);
+    -webkit-transform-origin: 0 0;
+    clip-path: inset(0px 0px 2000px 0px);
+}*/
+
+
