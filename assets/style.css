@@ -98,10 +98,6 @@ header nav ul li a:hover {
 }
 
 /* about me */
-.about-me {    
-    border-bottom: 2px solid grey;   
-}
-
 .content{
     margin: 50px auto;
     width: 80%;   
@@ -110,6 +106,15 @@ header nav ul li a:hover {
     text-align:center; 
     padding: 0 120px 0 120px;
     line-height: 1.7;
+}
+
+.content div {
+    border-bottom: 2px solid grey; 
+    padding-bottom: 60px;
+}
+
+.content .contact-me {
+    border-bottom: none;
 }
 
 .content h3 { 
@@ -123,24 +128,38 @@ header nav ul li a:hover {
 }
 
 .content p {
-    font-weight: bold; 
-    padding-bottom: 60px;   
+    font-weight: bold;       
 }
 
 /* my work section */
 .my-work {    
     margin: 0 auto;
-    display: inline;
-    width: 80%;
-    padding: 30px;    
+    display: inline;                
 }
 
 .my-work img {
+    position: unset;
     width: 30%;   
     height: auto;  
-    margin: 0 10px 0 10px;
-
+    margin: 0 10px 0 10px;    
 }
+
+.my-work img:hover {    
+    padding: 5px;
+    background-color:#808080;
+    transition: transform .2s; /* Animation */
+    width: 35%;    
+    margin: 0 auto;
+}
+
+/* contact me section */
+.contact-me a {
+    font-size: 40px;
+    font-weight: bolder;
+    text-decoration: none;    
+}
+
+
 /*.my-work img {
     text-align: center;
     position: relative;
@@ -153,5 +172,14 @@ header nav ul li a:hover {
     -webkit-transform-origin: 0 0;
     clip-path: inset(0px 0px 2000px 0px);
 }*/
+
+@media screen and (max-width: 980px){
+    .my-work img {
+        display: block;
+        padding: 0 0 20px 0;
+        text-align: center;
+        width: 100%;
+    }   
+}
 
 
